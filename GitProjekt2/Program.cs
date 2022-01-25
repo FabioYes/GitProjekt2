@@ -10,6 +10,11 @@ namespace GitProjekt2
     {
         static void Main(string[] args)
         {
+            Osoba osoba = new Osoba();
+            Console.WriteLine(osoba.DatumNarozeni);
+            Console.WriteLine("Zadej datum narození:");
+            DateTime datum = DateTime.Parse(Console.ReadLine());
+            Console.WriteLine(osoba.Vek());
         }
     }
 }
